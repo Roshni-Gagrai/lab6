@@ -1,0 +1,155 @@
+section img { 
+    height:10%;
+    width:100%;
+}
+
+
+
+#logo-image { 
+    float:left; 
+    height:40px; 
+    width:200px;
+}
+header { 
+    color: black; 
+    padding: 20px; 
+    text-align: center; 
+	position: sticky;
+    top: 0;
+}
+nav { 
+    padding: 10px;
+    text-align: center; 
+}
+nav a { 
+    color: black; 
+    margin: 10px 0; 
+    text-decoration: none; 
+    padding:40px;
+}
+nav a:hover { 
+    text-decoration: underline; 
+}
+footer { 
+    color: white; 
+    text-align: center; 
+    padding: 10px; 
+    margin-top: 20px; 
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hero-image {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/025/799/242/non_2x/linkedin-banner-with-abstract-low-poly-background-free-photo.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.hero-text h3 { 
+    font-size: 30px;
+    font-family: "Gill Sans Extrabold", sans-serif;
+}
+.hero-text p {
+    font-family: "Courier New", monospace;
+}
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+.hero-text button:hover {
+    background-color: #555;
+    color: white;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  padding: 10px;
+}
+.card-container > div {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+.card {
+	width: 50%;
+	height: 90%;
+	margin: auto;
+	background-color: grey;
+	border-radius: 20px;
+	border: 1px solic black;
+	padding: 50px;
+	box-shadow: 10px 10px 0px black;
+    transition: transform .2s;
+}
+.card:hover {
+  transform: scale(1.3);
+}
+h1 {
+	text-align: center;
+}
+footer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.social-btns {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 10px;
+    text-align: center;
+}
+.social-btns a {
+    padding: 20px;
+    color: #333;
+    font-size: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+@keyframes bounce {
+    0%,
+    100% {transform: translateY(0);}
+    50% {transform: translateY(-20px);}
+}
+@keyframes shake {
+    0%,
+    100% {transform: translateX(0);}
+    25%,75% {transform: translateX(-10px);}
+    50% {transform: translateX(10px);}
+}
+.social-btns a:hover {
+    animation: rotate 1s infinite linear;
+}
+.social-btns a:hover i.fa-github {
+    animation: bounce 1s infinite;
+    color: #24292e;
+}
+.social-btns a:hover i.fa-linkedin {
+    animation: bounce 1s infinite;
+    color: #0077b5;
+}
+.social-btns a:hover i.fa-youtube {
+    animation: bounce 1s infinite alternate;
+    color: #ff0000;
+}
