@@ -1,82 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link href=
-"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-          rel="stylesheet">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <header>
-	<img src="https://th.bing.com/th/id/R.849827637c57649c2b4024c2a8e86b8b?rik=w4BKo24m2u6Bfg&riu=http%3a%2f%2flofrev.net%2fwp-content%2fphotos%2f2017%2f05%2flogo_black.png&ehk=SF8WHhdmODP4d3gt4y7uaYTKoaPmfowvCmiqJsiUhPQ%3d&risl=&pid=ImgRaw&r=0" alt="site Logo" style="background: white" id="logo-image">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="#Portfolio">Portfolio</a>
-        <a href="#Services">Services</a>
-        <a href="about.html">About</a>
-        <a href="#Contact">Contact</a>
-    </nav>
-    </header>
 
-	<div class="hero-image">
-  		<div class="hero-text">
-    			<h3>Hi, My name is Roshni Gagrai</h3>
-    			<p>I design and develop</p>
-    			<button class="btn">Hire me now!</button>
-  		</div>
-	</div>
-	
-	<div id="Portfolio">
-	<h1>View My Projects:</h1>
-	<div class="card-container">
-		<div class="card">
-			<img src="" alt="">
-			<p class="description"></p></div>
-		<div class="card">
-			<img src="" alt="">
-			<p class="description">University website</p></div>
-		<div class="card">
-			<img src="" alt="">
-			<p class="description">Login forms</p></div>  
-		<div class="card">
-			<img src="" alt="">
-			<p class="description">library management</p></div>
-		<div class="card">
-			<img src="" alt="">
-			<p class="description">group project</p></div>
-		<div class="card">
-			<img src="" alt="">
-			<p class="description">Portfolio Website</p></div>  
-	</div>
-	</div>
-	
-	<div id="Services">
-	<h1>View My Services:</h1>
-	<button class="service-button">category1</button>
-	<button class="service-button">category2</button>
-	<button class="service-button">category3</button>
-	</div>
-	
-	<div id="Contact">
-	<h1>Contact details:</h1>
-	<form>
-	Name:<input type="text">
-	Email:<input type="email">
-	Message:<textarea value="Enter Your Message">
-	<button class="sub-btn" type="submit">submit</button>
-	</form>
-	</div>
-		
-	<footer>
-    <div class="social-btns">
-    <a href="#"><i class="fa fa-github"></i></a>
-    <a href="#"><i class="fa fa-linkedin"></i></a>
-    <a href="#"><i class="fa fa-youtube"></i></a>
+  <!-- Header -->
+  <header>
+    <div class="logo">MyPortfolio</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Hi, I'm Roshni</h1>
+    <h2>Creative Web Developer</h2>
+    <button class="cta-btn">Hire Me</button>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio" id="portfolio">
+    <h2>My Work</h2>
+    <div class="portfolio-grid">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRo3cId1ritUAVXxH9kUmQAH2yipiru6d7BA&s" alt="">
+        <div class="info">Project 1</div>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPzN3LTEzg85P0LbJtqweu-jUXAiF3Lw4n4FeQ2JpLbuieAYtFnKehZYVslHBuQxmf4e0&usqp=CAU" alt="">
+        <div class="info">Project 2</div>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRLL6yKkwt0jnRyZ9Is91fsqri71p8SiGRhw&s" alt="">
+        <div class="info">Project 3</div>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz_rLGqrIduC7c3WhZQCx6a6BuU6H6ewrcPA&s" alt="">
+        <div class="info">Project 4</div>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtSIKjK8fKoxA7xhW7ItXvYLSKUrmheeyKsw&s" alt="">
+        <div class="info">Project 5</div>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgQI2rO-hxV0ZJjRdCsmmjBpyTsX3yI6lnVA&s" alt="">
+        <div class="info">Project 6</div>
+      </div>
     </div>
-    </footer>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <h2>Services</h2>
+    <div class="service-icons">
+      <div class="icon">💻</div>
+      <div class="icon">🎨</div>
+      <div class="icon">📱</div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Clients Say</h2>
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <p>"This team transformed our website beautifully. Highly recommended!"</p>
+        <h4>- Alex Johnson</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Professional, creative, and always on time. Couldn’t ask for more."</p>
+        <h4>- Priya Sharma</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Their design sense is amazing. The animations make it so engaging."</p>
+        <h4>- David Lee</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit" class="submit-btn">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="socials">
+      <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/021/495/985/non_2x/facebook-social-media-logo-icon-free-png.png" height=25 width=30></a>
+      <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR473tBBzODSEYWgURT_YLl-MjmdPAanLOU_A&s" height=25 width=30></a>
+      <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLe6TGP5T0W70L0tnCmpbLP-Tat_cHc5Z0tg&s" height=25 width=30></a>
+    </div>
+    <p>© 2025 My Portfolio</p>
+  </footer>
 
 </body>
 </html>
